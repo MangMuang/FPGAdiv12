@@ -1,0 +1,15 @@
+|divider12
+clk12M => qs1M[0].CLK
+clk12M => qs1M[1].CLK
+clk12M => qs1M[2].CLK
+clk12M => qs3M[0].CLK
+clk12M => qs3M[1].CLK
+clk3M <= clkA1C.DB_MAX_OUTPUT_PORT_TYPE
+clk1M <= LessThan2.DB_MAX_OUTPUT_PORT_TYPE
+clk750k <= clkA2C.DB_MAX_OUTPUT_PORT_TYPE
+clk500k <= clkA4C.DB_MAX_OUTPUT_PORT_TYPE
+clk200k <= LessThan3.DB_MAX_OUTPUT_PORT_TYPE
+clk100 <= LessThan5.DB_MAX_OUTPUT_PORT_TYPE
+clk1 <= clkA7C.DB_MAX_OUTPUT_PORT_TYPE
+
+

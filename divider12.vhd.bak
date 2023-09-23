@@ -1,0 +1,39 @@
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.ALL;
+USE IEEE.std_logic_unsigned.ALL;
+
+ENTITY divider12 IS
+	PORT(
+		clkA : IN std_logic;
+		clkC : OUT std_logic
+	);
+END divider12;
+
+ARCHITECTURE behavior OF clkdivider IS
+SIGNAL qs : std_logic_vector (3 downto 0);
+
+BEGIN
+	counter : PROCESS(clkA)
+	BEGIN
+		IF rising_edge(clkA) THEN
+			IF qs < 5 THEN
+				qs <= qs + 1;
+			ELSE
+				qs <= "0000";
+			END IF;
+		END IF;
+	END PROCESS;
+	
+	clkA2C : PROCESS(qs)
+	BEGIN
+		IF (qs = 0 OR qs =  1 OR qs = 2 OR qs = 7 OR qs = 8 OR 
+		    qs = 6) THEN
+			 
+			 clkC <= '1';
+		ELSE
+			 clkC <= '0';
+		END IF;
+	END PROCESS;
+	
+	
+END behavior;

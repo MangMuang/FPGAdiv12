@@ -1,0 +1,22 @@
+Info: Start Nativelink Simulation process
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  Gate
+Family                :  cycloneii
+Quartus root          :  d:/program files(x86)/altera/quartus/bin64/
+Quartus sim root      :  d:/program files(x86)/altera/quartus/eda/sim_lib
+Simulation Tool       :  modelsim-altera
+Simulation Language   :  vhdl
+Version               :  93
+Simulation Mode       :  GUI
+Sim Output File       :  divider12.vho
+Sim SDF File       :  divider12_vhd.sdo
+Sim dir               :  simulation\modelsim
+
+=======================================================
+
+Info: Starting NativeLink simulation with ModelSim-Altera software
+Sourced NativeLink script d:/program files(x86)/altera/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Warning: File divider12_run_msim_gate_vhdl.do already exists - backing up current file as divider12_run_msim_gate_vhdl.do.bak5
+Info: Spawning ModelSim-Altera Simulation software 
